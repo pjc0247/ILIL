@@ -29,3 +29,21 @@ root.Emit();
 
 ![i](img/emit.png)<br>
 ![a](img/ast.png)
+
+<br><br>
+```c#
+class my_ilil {
+  def sum (a,b) {
+    ret a + b;
+  }
+  def sum2 (a,b) {
+    ret a + a * b + b;
+  }
+  def hello (a) {
+    [mscorlib]System.Console::WriteLine ( 1234 )
+    [mscorlib]System.Console::WriteLine ( a )
+    [mscorlib]System.Console::WriteLine ( a + 3 * 4 )
+    ret 0
+  }
+}
+```
