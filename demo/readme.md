@@ -17,6 +17,12 @@ class my_ilil {
 }
 ```
 
+Build
+----
+```
+make.rb ilil.il mydll
+```
+
 C# Code
 ----
 ```c#
@@ -31,10 +37,13 @@ class Program
 }
 ```
 
-Build
+C++ Code
 ----
-```
-make.rb ilil.il mydll
+```c#
+printf("%d\n", my_ilil::sum(1, 2));
+printf("%d\n", my_ilil::sum2(1, 2));
+
+my_ilil::hello(2);
 ```
 
 Result
